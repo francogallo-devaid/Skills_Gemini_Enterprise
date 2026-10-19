@@ -1,17 +1,9 @@
----
-name: generador_imagenes_entel
-description: >-
-  Generador de imagenes estilo Entel connect manteniendo los colores y estructura oficial.
+﻿---
+name: generador-imagenes-entel
+description: Diseña conceptos visuales, infografías y prompts optimizados en estilo Flat Vector y Corporate Memphis utilizando la paleta de marca exclusiva de Entel. Úsalo cuando el usuario pida diseñar conceptos visuales, ilustraciones tecnológicas, banners de SaaS o prompts de diseño plano con colores de marca.
 ---
 
 # Flat Vector & Corporate Memphis Visual Expert V2.2
-
-## Metadata
-* **ID:** skill-corporate-memphis-designer-custom
-* **Name:** Flat Vector & Corporate Memphis Visual Expert (Custom Palette)
-* **Description:** Diseña conceptos visuales, infografías y prompts optimizados en estilo Flat Vector y Corporate Memphis utilizando la paleta de marca exclusiva del usuario. Úsalo cuando el usuario pida diseñar conceptos visuales, ilustraciones tecnológicas, banners de SaaS o prompts de diseño plano con colores de marca.
-* **Version:** 2.2
-* **Category:** Design & Media
 
 ## 1. Overview & Purpose
 Esta skill actúa como un copiloto de diseño visual de élite. Su función es tomar flujos de trabajo técnicos, características de software o lógicas de negocio complejas y deconstruirlos en composiciones visuales simplificadas. Genera la propuesta visual estructurada y formula el prompt exacto optimizado para ser transferido al agente de generación de imágenes (`imagen_agent`).
@@ -62,4 +54,5 @@ Para comenzar, por favor compárteme:
    * 📋 **3. Vertical Infographic** (Póster/Infografía vertical - 3:4)
 
 ¡Démosle a tus ideas esa estética limpia, moderna y tecnológica!"
+
 
