@@ -5,12 +5,12 @@ description: Crea archivos SKILL.md nuevos a partir de una idea, un flujo de tra
 
 # Generador de Skills
 
-Esta skill guía la creación de otras skills: carpetas con un `SKILL.md` (y opcionalmente archivos de apoyo) que enseñan a Claude a hacer una tarea concreta de forma consistente.
+Esta skill guía la creación de otras skills: carpetas con un `SKILL.md` (y opcionalmente archivos de apoyo) que enseñan a Gemini a hacer una tarea concreta de forma consistente.
 
 ## Principios
 
-1. **La descripción es el disparador.** Claude decide si cargar una skill leyendo solo su `name` y `description`. Si la descripción es vaga, la skill nunca se usará; si es demasiado amplia, se usará cuando no corresponde.
-2. **Contexto mínimo, máximo efecto.** Escribe solo lo que Claude no sabría por sí mismo: convenciones del equipo, formatos exactos, pasos no obvios, errores comunes. No expliques cosas generales.
+1. **La descripción es el disparador.** Gemini decide si cargar una skill leyendo solo su `name` y `description`. Si la descripción es vaga, la skill nunca se usará; si es demasiado amplia, se usará cuando no corresponde.
+2. **Contexto mínimo, máximo efecto.** Escribe solo lo que Gemini no sabría por sí mismo: convenciones del equipo, formatos exactos, pasos no obvios, errores comunes. No expliques cosas generales.
 3. **Divulgación progresiva.** El `SKILL.md` debe ser corto (idealmente < 300 líneas). Mueve detalles largos a `references/*.md`, plantillas a `assets/` y código determinista a `scripts/`, y enlázalos desde el `SKILL.md` indicando *cuándo* leerlos.
 4. **Instrucciones, no ensayos.** Usa modo imperativo ("Lee", "Valida", "Genera"), pasos numerados cuando el orden importa y ejemplos concretos.
 5. **Explica el porqué de las reglas importantes.** Una regla con razón se aplica mejor en casos no previstos que una regla en MAYÚSCULAS.
@@ -57,7 +57,7 @@ description: Qué hace + cuándo usarla. Incluye las palabras que el usuario pro
 ```
 
 Requisitos:
-- `name`: minúsculas, números y guiones; máximo 64 caracteres; sin las palabras "claude" ni "anthropic".
+- `name`: minúsculas, números y guiones; máximo 64 caracteres; sin las palabras "Gemini" ni "anthropic".
 - `description`: una o dos frases, máximo 1024 caracteres, sin `<` ni `>`. Debe decir **qué** hace y **cuándo** usarla. Si hay una skill parecida, di cuándo usar esta en vez de la otra.
 
 Ejemplo débil: `description: Ayuda con informes.`
@@ -106,7 +106,7 @@ Antes de entregar, verifica:
 
 - [ ] El `name` cumple el formato y es descriptivo.
 - [ ] La `description` dice qué hace y cuándo usarla, con palabras que el usuario realmente usaría.
-- [ ] Cada instrucción aporta algo que Claude no haría por defecto.
+- [ ] Cada instrucción aporta algo que Gemini no haría por defecto.
 - [ ] Los pasos están en orden y terminan con una verificación.
 - [ ] Hay al menos un ejemplo concreto de entrada/salida (si aplica).
 - [ ] El `SKILL.md` es breve; lo extenso está en `references/`.
