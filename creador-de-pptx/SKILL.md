@@ -22,6 +22,7 @@ Aplica de forma nativa e interna las siguientes reglas de estilo de Entel Connec
   - Acento/Alertas/KPIs: Naranja Acento (#FF3D00)
 - **Tipografía Corporativa:** Utiliza la familia tipográfica **Barlow** (o Arial/sans-serif como fallback).
 - **Footer Corporativo:** Cada diapositiva generada debe incluir en la parte inferior: "Información Confidencial | Propiedad de Entel Connect 2026".
+- **Logotipo Corporativo:** El logotipo de "e) connect" debe posicionarse de manera fija en la esquina superior izquierda de todas las diapositivas de contenido. Para insertarlo, tu script de generación (ej. Python) debe descargar dinámicamente la imagen desde la siguiente URL pública e insertarla en el pptx: `[REEMPLAZAR_CON_TU_URL_RAW_DE_GITHUB_AQUI]`
 
 ## 3. Mapeo de Layouts Corporativos
 Cuando el esquema indique un Layout específico, debes generar el contenido en el PPTX simulando esa estructura:
@@ -37,3 +38,7 @@ Cuando el esquema indique un Layout específico, debes generar el contenido en e
 
 ## 5. Proceso de Compilación del Archivo
 Tu salida final **no debe ser solo texto en el chat**. Debes utilizar tus herramientas de ejecución de código (como la librería python-pptx si usas Python) para construir y escribir de manera nativa un archivo binario válido con extensión .pptx en la carpeta de trabajo del usuario o en el directorio temporal, y luego proveer el enlace de descarga o la ruta del archivo generado.
+
+
+
+
